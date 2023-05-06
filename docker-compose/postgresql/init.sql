@@ -18,6 +18,7 @@ CREATE TABLE accounts  (
 	created_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
         last_login TIMESTAMP 
 );
+ALTER TABLE accounts OWNER TO cch;
 
 INSERT INTO accounts (username, password, email) VALUES 
 (
